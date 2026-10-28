@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-27T18:07:56.764336-08:00 by Eclipse SUMO netedit v1_28_0+0199-a845272d68e
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="C_North_To_South" begin="0.00" end="3600.00" number="1800" color="blue" from="-E7" to="E26" via="E16 -E23"/>
+</routes>
