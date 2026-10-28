@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-10-27T16:39:32.184791-08:00 by Eclipse SUMO sumo v1_28_0+0199-a845272d68e
+<!-- generated on 2026-10-28T16:30:55.064507-08:00 by Eclipse SUMO sumo v1_28_0+0199-a845272d68e
 -->
 
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="network5.net.xml"/>
-        <route-files value="Test.rou.xml,C_N_S.rou.xml,C_N_W.rou.xml"/>
+        <route-files value="Test.rou.xml,C_N_S.rou.xml,C_N_E.rou.xml,C_N_W.rou.xml,C_W_E.rou.xml,C_W_S.rou.xml,C_W_N.rou.xml,C_S_W.rou.xml,C_S_N.rou.xml,C_S_E.rou.xml,C_E_S.rou.xml,C_E_N.rou.xml,C_E_W.rou.xml"/>
     </input>
 
 </sumoConfiguration>
