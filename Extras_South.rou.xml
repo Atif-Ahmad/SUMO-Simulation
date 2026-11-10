@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-04T18:14:14.662102-08:00 by Eclipse SUMO netedit v1_28_0+0199-a845272d68e
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="ExtraS1" begin="0.00" end="3600.00" perHour="1800.00" color="255,180,0" from="-E26" to="E25"/>
+    <flow id="ExtraS2" begin="0.00" end="3600.00" perHour="1800.00" color="190,255,172" from="-E26" to="E24"/>
+    <flow id="ExtraS3" begin="0.00" end="3600.00" perHour="1800.00" color="25,166,255" from="-E26" to="E8" via="E23 -E16"/>
+    <flow id="ExtraS4" begin="0.00" end="3600.00" perHour="1800.00" color="149,0,3" from="-E26" to="E9" via="E23 -E16"/>
+</routes>

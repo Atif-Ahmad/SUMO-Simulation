@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-04T18:43:18.778875-08:00 by Eclipse SUMO netedit v1_28_0+0199-a845272d68e
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <trip id="ExtraN1" depart="0.00" color="149,226,255" from="-E7" to="E8"/>
+    <trip id="ExtraN2" depart="0.00" color="243,149,255" from="-E7" to="E9"/>
+    <trip id="ExtraN4" depart="0.00" color="152,152,152" from="-E7" to="E24" via="E16 -E23"/>
+    <trip id="ExtrasN3" depart="0.00" color="white" from="-E7" to="E25" via="E16 -E23"/>
+</routes>
