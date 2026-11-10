@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="network5.net.xml"/>
-        <route-files value="Test.rou.xml,C_N_S.rou.xml,C_N_E.rou.xml,C_N_W.rou.xml,C_W_E.rou.xml,C_W_S.rou.xml,C_W_N.rou.xml,C_S_W.rou.xml,C_S_N.rou.xml,C_S_E.rou.xml,C_E_S.rou.xml,C_E_N.rou.xml,C_E_W.rou.xml,Extras_North.rou.xml"/>
+        <route-files value="combined_routes.rou.xml"/>
     </input>
 
 </sumoConfiguration>

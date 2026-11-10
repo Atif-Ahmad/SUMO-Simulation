@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-09T21:45:23.463590-08:00 by Eclipse SUMO netedit v1_28_0+0199-a845272d68e
+-->
+
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+
+    <!-- Main North Routes -->
+    <flow id="C_North_To_East" begin="0.00" end="3600.00" number="1800" color="255,9,0" from="-E7" to="E22" via="E16 -E19"/>
+    <flow id="C_North_To_South" begin="0.00" end="3600.00" number="1800" color="blue" from="-E7" to="E26" via="E16 -E23"/>
+    <flow id="C_North_To_West" begin="0.00" end="3600.00" perHour="1800.00" from="-E7" to="E18" via="E16 E5"/>
+    
+    <!-- Main East Routes -->
+    <flow id="C_East_To_North" begin="0.00" end="3600.00" number="1800" color="195,0,255" from="-E22" to="E7" via="E19 -E16"/>
+    <flow id="C_East_To_South" begin="0.00" end="3600.00" number="1800" color="255,0,157" from="-E22" to="E26" via="E19 -E23"/>
+    <flow id="C_East_To_West" begin="0.00" end="3600.00" number="1800" color="0,207,255" from="-E22" to="E18" via="E19 E5"/>
+
+    <!-- Main West Routes -->
+    <flow id="C_West_To_East" begin="0.00" end="3600.00" number="1800" color="red" from="-E18" to="E22" via="-E5 -E19"/>
+    <flow id="C_West_To_North" begin="0.00" end="3600.00" number="1800" from="-E18" to="E7" via="-E5 -E16"/>
+    <flow id="C_West_To_South" begin="0.00" end="3600.00" number="1800" color="blue" from="-E18" to="E26" via="-E5 -E23"/>
+
+    <!-- Main South Routes -->
+    <flow id="C_South_To_East" begin="0.00" end="3600.00" number="1800" color="255,161,0" from="-E26" to="E22" via="E23 -E19"/>
+    <flow id="C_South_To_North" begin="0.00" end="3600.00" number="1800" color="magenta" from="-E26" to="E7" via="E23 -E16"/>
+    <flow id="C_South_To_West" begin="0.00" end="3600.00" number="1800" color="0,255,174" from="-E26" to="E18" via="E23 E5"/>
+
+    <!-- Extra East Routes -->
+    <flow id="ExtraE1" begin="0.00" end="3600.00" perHour="1800.00" color="149,0,3" from="-E22" to="E21"/>
+    <flow id="ExtraE2" begin="0.00" end="3600.00" perHour="1800.00" color="149,103,0" from="-E22" to="E20"/>
+    <flow id="ExtraE3" begin="0.00" end="3600.00" perHour="1800.00" color="0,143,149" from="-E22" to="E6" via="E19 E5"/>
+    <flow id="ExtraE4" begin="0.00" end="3600.00" perHour="1800.00" color="90,0,143" from="-E22" to="E17" via="E19 E5"/>
+
+    <!-- Extra South Routes -->
+    <flow id="ExtraS1" begin="0.00" end="3600.00" perHour="1800.00" color="255,180,0" from="-E26" to="E25"/>
+    <flow id="ExtraS2" begin="0.00" end="3600.00" perHour="1800.00" color="190,255,172" from="-E26" to="E24"/>
+    <flow id="ExtraS3" begin="0.00" end="3600.00" perHour="1800.00" color="25,166,255" from="-E26" to="E8" via="E23 -E16"/>
+    <flow id="ExtraS4" begin="0.00" end="3600.00" perHour="1800.00" color="149,0,3" from="-E26" to="E9" via="E23 -E16"/>
+
+    <!-- Extra North Routes -->
+    <trip id="ExtraN1" depart="0.00" color="149,226,255" from="-E7" to="E8"/>
+    <trip id="ExtraN2" depart="0.00" color="243,149,255" from="-E7" to="E9"/>
+    <trip id="ExtraN4" depart="0.00" color="152,152,152" from="-E7" to="E24" via="E16 -E23"/>
+    <trip id="ExtrasN3" depart="0.00" color="white" from="-E7" to="E25" via="E16 -E23"/>
+
+    <!-- Extra West Routes -->
+    <flow id="ExtraW1" begin="0.00" end="3600.00" perHour="1800.00" color="cyan" from="-E18" to="E6"/>
+    <flow id="ExtraW2" begin="0.00" end="3600.00" perHour="1800.00" color="216,151,255" from="-E18" to="E17"/>
+    <flow id="ExtraW3" begin="0.00" end="3600.00" perHour="1800.00" color="255,174,228" from="-E18" to="E20" via="-E5 -E19"/>
+    <flow id="ExtraW4" begin="0.00" end="3600.00" perHour="1800.00" color="255,180,0" from="-E18" to="E21" via="-E5 -E19"/>
+</routes>
