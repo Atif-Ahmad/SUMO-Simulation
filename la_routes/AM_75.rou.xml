@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- AM peak hour (08:00-09:00), 75% of the counted demand. Run with scale=1.0 (the scale is already applied). -->
+<!-- Source: LADOT/NDS turning-movement counts at five Hollywood intersections. Rate of a path = entry veh/h x scale x product of left/through/right shares. -->
+<!-- Flows use probability = veh/h / 3600 per second, so arrivals are random and depend on the SUMO seed. -->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <!-- node1 EB (entry -E9): 538 veh/h -->
+    <flow id="node1_EB_to_E8" begin="0.00" end="3600.00" probability="0.0810417" color="255,9,0" from="-E9" to="E8"/>
+    <flow id="node1_EB_to_E7" begin="0.00" end="3600.00" probability="0.0570833" color="255,9,0" from="-E9" to="E7"/>
+    <flow id="node1_EB_to_E26" begin="0.00" end="3600.00" probability="0.0076869" color="255,9,0" from="-E9" to="E26" via="E16 -E23"/>
+    <flow id="node1_EB_to_E25" begin="0.00" end="3600.00" probability="0.0014077" color="255,9,0" from="-E9" to="E25" via="E16 -E23"/>
+    <flow id="node1_EB_to_E18" begin="0.00" end="3600.00" probability="0.0013338" color="255,9,0" from="-E9" to="E18" via="E16 E5"/>
+    <flow id="node1_EB_to_E24" begin="0.00" end="3600.00" probability="0.0004731" color="255,9,0" from="-E9" to="E24" via="E16 -E23"/>
+    <flow id="node1_EB_to_E17" begin="0.00" end="3600.00" probability="0.0002591" color="255,9,0" from="-E9" to="E17" via="E16 E5"/>
+    <flow id="node1_EB_to_E22" begin="0.00" end="3600.00" probability="0.0002341" color="255,9,0" from="-E9" to="E22" via="E16 -E19"/>
+    <flow id="node1_EB_to_E6" begin="0.00" end="3600.00" probability="0.0000460" color="255,9,0" from="-E9" to="E6" via="E16 E5"/>
+    <flow id="node1_EB_to_E20" begin="0.00" end="3600.00" probability="0.0000119" color="255,9,0" from="-E9" to="E20" via="E16 -E19"/>
+    <flow id="node1_EB_to_E21" begin="0.00" end="3600.00" probability="0.0000056" color="255,9,0" from="-E9" to="E21" via="E16 -E19"/>
+
+    <!-- node1 SB (entry -E7): 946 veh/h -->
+    <flow id="node1_SB_to_E26" begin="0.00" end="3600.00" probability="0.1515025" color="0,0,255" from="-E7" to="E26" via="E16 -E23"/>
+    <flow id="node1_SB_to_E9" begin="0.00" end="3600.00" probability="0.0312500" color="0,0,255" from="-E7" to="E9"/>
+    <flow id="node1_SB_to_E25" begin="0.00" end="3600.00" probability="0.0277448" color="0,0,255" from="-E7" to="E25" via="E16 -E23"/>
+    <flow id="node1_SB_to_E18" begin="0.00" end="3600.00" probability="0.0262885" color="0,0,255" from="-E7" to="E18" via="E16 E5"/>
+    <flow id="node1_SB_to_E24" begin="0.00" end="3600.00" probability="0.0093250" color="0,0,255" from="-E7" to="E24" via="E16 -E23"/>
+    <flow id="node1_SB_to_E8" begin="0.00" end="3600.00" probability="0.0058333" color="0,0,255" from="-E7" to="E8"/>
+    <flow id="node1_SB_to_E17" begin="0.00" end="3600.00" probability="0.0051074" color="0,0,255" from="-E7" to="E17" via="E16 E5"/>
+    <flow id="node1_SB_to_E22" begin="0.00" end="3600.00" probability="0.0046147" color="0,0,255" from="-E7" to="E22" via="E16 -E19"/>
+    <flow id="node1_SB_to_E6" begin="0.00" end="3600.00" probability="0.0009065" color="0,0,255" from="-E7" to="E6" via="E16 E5"/>
+    <flow id="node1_SB_to_E20" begin="0.00" end="3600.00" probability="0.0002339" color="0,0,255" from="-E7" to="E20" via="E16 -E19"/>
+    <flow id="node1_SB_to_E21" begin="0.00" end="3600.00" probability="0.0001101" color="0,0,255" from="-E7" to="E21" via="E16 -E19"/>
+
+    <!-- node1 WB (entry -E8): 544 veh/h -->
+    <flow id="node1_WB_to_E9" begin="0.00" end="3600.00" probability="0.1033333" color="0,207,255" from="-E8" to="E9"/>
+    <flow id="node1_WB_to_E26" begin="0.00" end="3600.00" probability="0.0265549" color="0,207,255" from="-E8" to="E26" via="E16 -E23"/>
+    <flow id="node1_WB_to_E7" begin="0.00" end="3600.00" probability="0.0083333" color="0,207,255" from="-E8" to="E7"/>
+    <flow id="node1_WB_to_E25" begin="0.00" end="3600.00" probability="0.0048630" color="0,207,255" from="-E8" to="E25" via="E16 -E23"/>
+    <flow id="node1_WB_to_E18" begin="0.00" end="3600.00" probability="0.0046078" color="0,207,255" from="-E8" to="E18" via="E16 E5"/>
+    <flow id="node1_WB_to_E24" begin="0.00" end="3600.00" probability="0.0016345" color="0,207,255" from="-E8" to="E24" via="E16 -E23"/>
+    <flow id="node1_WB_to_E17" begin="0.00" end="3600.00" probability="0.0008952" color="0,207,255" from="-E8" to="E17" via="E16 E5"/>
+    <flow id="node1_WB_to_E22" begin="0.00" end="3600.00" probability="0.0008088" color="0,207,255" from="-E8" to="E22" via="E16 -E19"/>
+    <flow id="node1_WB_to_E6" begin="0.00" end="3600.00" probability="0.0001589" color="0,207,255" from="-E8" to="E6" via="E16 E5"/>
+    <flow id="node1_WB_to_E20" begin="0.00" end="3600.00" probability="0.0000410" color="0,207,255" from="-E8" to="E20" via="E16 -E19"/>
+    <flow id="node1_WB_to_E21" begin="0.00" end="3600.00" probability="0.0000193" color="0,207,255" from="-E8" to="E21" via="E16 -E19"/>
+
+    <!-- node3 EB (entry -E18): 609 veh/h -->
+    <flow id="node3_EB_to_E22" begin="0.00" end="3600.00" probability="0.0900538" color="255,0,157" from="-E18" to="E22" via="-E5 -E19"/>
+    <flow id="node3_EB_to_E7" begin="0.00" end="3600.00" probability="0.0296080" color="255,0,157" from="-E18" to="E7" via="-E5 -E16"/>
+    <flow id="node3_EB_to_E6" begin="0.00" end="3600.00" probability="0.0210417" color="255,0,157" from="-E18" to="E6"/>
+    <flow id="node3_EB_to_E17" begin="0.00" end="3600.00" probability="0.0139583" color="255,0,157" from="-E18" to="E17"/>
+    <flow id="node3_EB_to_E26" begin="0.00" end="3600.00" probability="0.0052541" color="255,0,157" from="-E18" to="E26" via="-E5 -E23"/>
+    <flow id="node3_EB_to_E20" begin="0.00" end="3600.00" probability="0.0045654" color="255,0,157" from="-E18" to="E20" via="-E5 -E19"/>
+    <flow id="node3_EB_to_E21" begin="0.00" end="3600.00" probability="0.0021484" color="255,0,157" from="-E18" to="E21" via="-E5 -E19"/>
+    <flow id="node3_EB_to_E25" begin="0.00" end="3600.00" probability="0.0009622" color="255,0,157" from="-E18" to="E25" via="-E5 -E23"/>
+    <flow id="node3_EB_to_E8" begin="0.00" end="3600.00" probability="0.0007083" color="255,0,157" from="-E18" to="E8" via="-E5 -E16"/>
+    <flow id="node3_EB_to_E9" begin="0.00" end="3600.00" probability="0.0005430" color="255,0,157" from="-E18" to="E9" via="-E5 -E16"/>
+    <flow id="node3_EB_to_E24" begin="0.00" end="3600.00" probability="0.0003234" color="255,0,157" from="-E18" to="E24" via="-E5 -E23"/>
+
+    <!-- node3 NB (entry -E17): 543 veh/h -->
+    <flow id="node3_NB_to_E6" begin="0.00" end="3600.00" probability="0.0968750" color="255,161,0" from="-E17" to="E6"/>
+    <flow id="node3_NB_to_E18" begin="0.00" end="3600.00" probability="0.0258333" color="255,161,0" from="-E17" to="E18"/>
+    <flow id="node3_NB_to_E22" begin="0.00" end="3600.00" probability="0.0188777" color="255,161,0" from="-E17" to="E22" via="-E5 -E19"/>
+    <flow id="node3_NB_to_E7" begin="0.00" end="3600.00" probability="0.0062066" color="255,161,0" from="-E17" to="E7" via="-E5 -E16"/>
+    <flow id="node3_NB_to_E26" begin="0.00" end="3600.00" probability="0.0011014" color="255,161,0" from="-E17" to="E26" via="-E5 -E23"/>
+    <flow id="node3_NB_to_E20" begin="0.00" end="3600.00" probability="0.0009570" color="255,161,0" from="-E17" to="E20" via="-E5 -E19"/>
+    <flow id="node3_NB_to_E21" begin="0.00" end="3600.00" probability="0.0004504" color="255,161,0" from="-E17" to="E21" via="-E5 -E19"/>
+    <flow id="node3_NB_to_E25" begin="0.00" end="3600.00" probability="0.0002017" color="255,161,0" from="-E17" to="E25" via="-E5 -E23"/>
+    <flow id="node3_NB_to_E8" begin="0.00" end="3600.00" probability="0.0001485" color="255,161,0" from="-E17" to="E8" via="-E5 -E16"/>
+    <flow id="node3_NB_to_E9" begin="0.00" end="3600.00" probability="0.0001138" color="255,161,0" from="-E17" to="E9" via="-E5 -E16"/>
+    <flow id="node3_NB_to_E24" begin="0.00" end="3600.00" probability="0.0000678" color="255,161,0" from="-E17" to="E24" via="-E5 -E23"/>
+
+    <!-- node3 SB (entry -E6): 844 veh/h -->
+    <flow id="node3_SB_to_E17" begin="0.00" end="3600.00" probability="0.1831250" color="195,0,255" from="-E6" to="E17"/>
+    <flow id="node3_SB_to_E18" begin="0.00" end="3600.00" probability="0.0395833" color="195,0,255" from="-E6" to="E18"/>
+    <flow id="node3_SB_to_E22" begin="0.00" end="3600.00" probability="0.0078308" color="195,0,255" from="-E6" to="E22" via="-E5 -E19"/>
+    <flow id="node3_SB_to_E7" begin="0.00" end="3600.00" probability="0.0025746" color="195,0,255" from="-E6" to="E7" via="-E5 -E16"/>
+    <flow id="node3_SB_to_E26" begin="0.00" end="3600.00" probability="0.0004569" color="195,0,255" from="-E6" to="E26" via="-E5 -E23"/>
+    <flow id="node3_SB_to_E20" begin="0.00" end="3600.00" probability="0.0003970" color="195,0,255" from="-E6" to="E20" via="-E5 -E19"/>
+    <flow id="node3_SB_to_E21" begin="0.00" end="3600.00" probability="0.0001868" color="195,0,255" from="-E6" to="E21" via="-E5 -E19"/>
+    <flow id="node3_SB_to_E25" begin="0.00" end="3600.00" probability="0.0000837" color="195,0,255" from="-E6" to="E25" via="-E5 -E23"/>
+    <flow id="node3_SB_to_E8" begin="0.00" end="3600.00" probability="0.0000616" color="195,0,255" from="-E6" to="E8" via="-E5 -E16"/>
+    <flow id="node3_SB_to_E9" begin="0.00" end="3600.00" probability="0.0000472" color="195,0,255" from="-E6" to="E9" via="-E5 -E16"/>
+    <flow id="node3_SB_to_E24" begin="0.00" end="3600.00" probability="0.0000281" color="195,0,255" from="-E6" to="E24" via="-E5 -E23"/>
+
+    <!-- node4 NB (entry -E21): 201 veh/h -->
+    <flow id="node4_NB_to_E20" begin="0.00" end="3600.00" probability="0.0381250" color="0,255,174" from="-E21" to="E20"/>
+    <flow id="node4_NB_to_E22" begin="0.00" end="3600.00" probability="0.0114583" color="0,255,174" from="-E21" to="E22"/>
+    <flow id="node4_NB_to_E18" begin="0.00" end="3600.00" probability="0.0044527" color="0,255,174" from="-E21" to="E18" via="E19 E5"/>
+    <flow id="node4_NB_to_E17" begin="0.00" end="3600.00" probability="0.0008651" color="0,255,174" from="-E21" to="E17" via="E19 E5"/>
+    <flow id="node4_NB_to_E26" begin="0.00" end="3600.00" probability="0.0004873" color="0,255,174" from="-E21" to="E26" via="E19 -E23"/>
+    <flow id="node4_NB_to_E7" begin="0.00" end="3600.00" probability="0.0001652" color="0,255,174" from="-E21" to="E7" via="E19 -E16"/>
+    <flow id="node4_NB_to_E6" begin="0.00" end="3600.00" probability="0.0001535" color="0,255,174" from="-E21" to="E6" via="E19 E5"/>
+    <flow id="node4_NB_to_E25" begin="0.00" end="3600.00" probability="0.0000892" color="0,255,174" from="-E21" to="E25" via="E19 -E23"/>
+    <flow id="node4_NB_to_E24" begin="0.00" end="3600.00" probability="0.0000300" color="0,255,174" from="-E21" to="E24" via="E19 -E23"/>
+    <flow id="node4_NB_to_E8" begin="0.00" end="3600.00" probability="0.0000040" color="0,255,174" from="-E21" to="E8" via="E19 -E16"/>
+    <flow id="node4_NB_to_E9" begin="0.00" end="3600.00" probability="0.0000030" color="0,255,174" from="-E21" to="E9" via="E19 -E16"/>
+
+    <!-- node4 SB (entry -E20): 376 veh/h -->
+    <flow id="node4_SB_to_E21" begin="0.00" end="3600.00" probability="0.0754167" color="149,103,0" from="-E20" to="E21"/>
+    <flow id="node4_SB_to_E22" begin="0.00" end="3600.00" probability="0.0143750" color="149,103,0" from="-E20" to="E22"/>
+    <flow id="node4_SB_to_E18" begin="0.00" end="3600.00" probability="0.0105380" color="149,103,0" from="-E20" to="E18" via="E19 E5"/>
+    <flow id="node4_SB_to_E17" begin="0.00" end="3600.00" probability="0.0020473" color="149,103,0" from="-E20" to="E17" via="E19 E5"/>
+    <flow id="node4_SB_to_E26" begin="0.00" end="3600.00" probability="0.0011533" color="149,103,0" from="-E20" to="E26" via="E19 -E23"/>
+    <flow id="node4_SB_to_E7" begin="0.00" end="3600.00" probability="0.0003909" color="149,103,0" from="-E20" to="E7" via="E19 -E16"/>
+    <flow id="node4_SB_to_E6" begin="0.00" end="3600.00" probability="0.0003634" color="149,103,0" from="-E20" to="E6" via="E19 E5"/>
+    <flow id="node4_SB_to_E25" begin="0.00" end="3600.00" probability="0.0002112" color="149,103,0" from="-E20" to="E25" via="E19 -E23"/>
+    <flow id="node4_SB_to_E24" begin="0.00" end="3600.00" probability="0.0000710" color="149,103,0" from="-E20" to="E24" via="E19 -E23"/>
+    <flow id="node4_SB_to_E8" begin="0.00" end="3600.00" probability="0.0000094" color="149,103,0" from="-E20" to="E8" via="E19 -E16"/>
+    <flow id="node4_SB_to_E9" begin="0.00" end="3600.00" probability="0.0000072" color="149,103,0" from="-E20" to="E9" via="E19 -E16"/>
+
+    <!-- node4 WB (entry -E22): 1206 veh/h -->
+    <flow id="node4_WB_to_E18" begin="0.00" end="3600.00" probability="0.2164010" color="90,0,143" from="-E22" to="E18" via="E19 E5"/>
+    <flow id="node4_WB_to_E17" begin="0.00" end="3600.00" probability="0.0420426" color="90,0,143" from="-E22" to="E17" via="E19 E5"/>
+    <flow id="node4_WB_to_E26" begin="0.00" end="3600.00" probability="0.0236837" color="90,0,143" from="-E22" to="E26" via="E19 -E23"/>
+    <flow id="node4_WB_to_E21" begin="0.00" end="3600.00" probability="0.0233333" color="90,0,143" from="-E22" to="E21"/>
+    <flow id="node4_WB_to_E7" begin="0.00" end="3600.00" probability="0.0080263" color="90,0,143" from="-E22" to="E7" via="E19 -E16"/>
+    <flow id="node4_WB_to_E20" begin="0.00" end="3600.00" probability="0.0079167" color="90,0,143" from="-E22" to="E20"/>
+    <flow id="node4_WB_to_E6" begin="0.00" end="3600.00" probability="0.0074621" color="90,0,143" from="-E22" to="E6" via="E19 E5"/>
+    <flow id="node4_WB_to_E25" begin="0.00" end="3600.00" probability="0.0043372" color="90,0,143" from="-E22" to="E25" via="E19 -E23"/>
+    <flow id="node4_WB_to_E24" begin="0.00" end="3600.00" probability="0.0014577" color="90,0,143" from="-E22" to="E24" via="E19 -E23"/>
+    <flow id="node4_WB_to_E8" begin="0.00" end="3600.00" probability="0.0001920" color="90,0,143" from="-E22" to="E8" via="E19 -E16"/>
+    <flow id="node4_WB_to_E9" begin="0.00" end="3600.00" probability="0.0001472" color="90,0,143" from="-E22" to="E9" via="E19 -E16"/>
+
+    <!-- node5 EB (entry -E25): 712 veh/h -->
+    <flow id="node5_EB_to_E24" begin="0.00" end="3600.00" probability="0.1652083" color="0,143,149" from="-E25" to="E24"/>
+    <flow id="node5_EB_to_E7" begin="0.00" end="3600.00" probability="0.0220112" color="0,143,149" from="-E25" to="E7" via="E23 -E16"/>
+    <flow id="node5_EB_to_E26" begin="0.00" end="3600.00" probability="0.0062500" color="0,143,149" from="-E25" to="E26"/>
+    <flow id="node5_EB_to_E22" begin="0.00" end="3600.00" probability="0.0020834" color="0,143,149" from="-E25" to="E22" via="E23 -E19"/>
+    <flow id="node5_EB_to_E18" begin="0.00" end="3600.00" probability="0.0008706" color="0,143,149" from="-E25" to="E18" via="E23 E5"/>
+    <flow id="node5_EB_to_E8" begin="0.00" end="3600.00" probability="0.0005266" color="0,143,149" from="-E25" to="E8" via="E23 -E16"/>
+    <flow id="node5_EB_to_E9" begin="0.00" end="3600.00" probability="0.0004037" color="0,143,149" from="-E25" to="E9" via="E23 -E16"/>
+    <flow id="node5_EB_to_E17" begin="0.00" end="3600.00" probability="0.0001691" color="0,143,149" from="-E25" to="E17" via="E23 E5"/>
+    <flow id="node5_EB_to_E20" begin="0.00" end="3600.00" probability="0.0001056" color="0,143,149" from="-E25" to="E20" via="E23 -E19"/>
+    <flow id="node5_EB_to_E21" begin="0.00" end="3600.00" probability="0.0000497" color="0,143,149" from="-E25" to="E21" via="E23 -E19"/>
+    <flow id="node5_EB_to_E6" begin="0.00" end="3600.00" probability="0.0000300" color="0,143,149" from="-E25" to="E6" via="E23 E5"/>
+
+    <!-- node5 NB (entry -E26): 897 veh/h -->
+    <flow id="node5_NB_to_E7" begin="0.00" end="3600.00" probability="0.1787101" color="255,180,0" from="-E26" to="E7" via="E23 -E16"/>
+    <flow id="node5_NB_to_E24" begin="0.00" end="3600.00" probability="0.0266667" color="255,180,0" from="-E26" to="E24"/>
+    <flow id="node5_NB_to_E22" begin="0.00" end="3600.00" probability="0.0169149" color="255,180,0" from="-E26" to="E22" via="E23 -E19"/>
+    <flow id="node5_NB_to_E25" begin="0.00" end="3600.00" probability="0.0093750" color="255,180,0" from="-E26" to="E25"/>
+    <flow id="node5_NB_to_E18" begin="0.00" end="3600.00" probability="0.0070688" color="255,180,0" from="-E26" to="E18" via="E23 E5"/>
+    <flow id="node5_NB_to_E8" begin="0.00" end="3600.00" probability="0.0042754" color="255,180,0" from="-E26" to="E8" via="E23 -E16"/>
+    <flow id="node5_NB_to_E9" begin="0.00" end="3600.00" probability="0.0032778" color="255,180,0" from="-E26" to="E9" via="E23 -E16"/>
+    <flow id="node5_NB_to_E17" begin="0.00" end="3600.00" probability="0.0013733" color="255,180,0" from="-E26" to="E17" via="E23 E5"/>
+    <flow id="node5_NB_to_E20" begin="0.00" end="3600.00" probability="0.0008575" color="255,180,0" from="-E26" to="E20" via="E23 -E19"/>
+    <flow id="node5_NB_to_E21" begin="0.00" end="3600.00" probability="0.0004035" color="255,180,0" from="-E26" to="E21" via="E23 -E19"/>
+    <flow id="node5_NB_to_E6" begin="0.00" end="3600.00" probability="0.0002438" color="255,180,0" from="-E26" to="E6" via="E23 E5"/>
+
+    <!-- node5 WB (entry -E24): 1138 veh/h -->
+    <flow id="node5_WB_to_E25" begin="0.00" end="3600.00" probability="0.2527083" color="25,166,255" from="-E24" to="E25"/>
+    <flow id="node5_WB_to_E26" begin="0.00" end="3600.00" probability="0.0545833" color="25,166,255" from="-E24" to="E26"/>
+    <flow id="node5_WB_to_E7" begin="0.00" end="3600.00" probability="0.0073371" color="25,166,255" from="-E24" to="E7" via="E23 -E16"/>
+    <flow id="node5_WB_to_E22" begin="0.00" end="3600.00" probability="0.0006945" color="25,166,255" from="-E24" to="E22" via="E23 -E19"/>
+    <flow id="node5_WB_to_E18" begin="0.00" end="3600.00" probability="0.0002902" color="25,166,255" from="-E24" to="E18" via="E23 E5"/>
+    <flow id="node5_WB_to_E8" begin="0.00" end="3600.00" probability="0.0001755" color="25,166,255" from="-E24" to="E8" via="E23 -E16"/>
+    <flow id="node5_WB_to_E9" begin="0.00" end="3600.00" probability="0.0001346" color="25,166,255" from="-E24" to="E9" via="E23 -E16"/>
+    <flow id="node5_WB_to_E17" begin="0.00" end="3600.00" probability="0.0000564" color="25,166,255" from="-E24" to="E17" via="E23 E5"/>
+    <flow id="node5_WB_to_E20" begin="0.00" end="3600.00" probability="0.0000352" color="25,166,255" from="-E24" to="E20" via="E23 -E19"/>
+    <flow id="node5_WB_to_E21" begin="0.00" end="3600.00" probability="0.0000166" color="25,166,255" from="-E24" to="E21" via="E23 -E19"/>
+    <flow id="node5_WB_to_E6" begin="0.00" end="3600.00" probability="0.0000100" color="25,166,255" from="-E24" to="E6" via="E23 E5"/>
+</routes>
