@@ -2,8 +2,9 @@
 # Runs the baseline for the AM and PM levels listed below, for every seed.
 # Skips runs that already finished, so you can stop it and start it again.
 
-SEEDS="1 2 3 4 5 6 7 8 9 10"
-AM_LEVELS="65 70 75 80 90 100"
+# SEEDS="1 2 3 4 5 6 7 8 9 10"
+SEEDS="1 2 3 4 5"
+AM_LEVELS="50 60 65 70 75 80 90 100"
 PM_LEVELS="50 60 65 70 75 80 90 100"
 
 run_one () {            # usage: run_one AM 65 3
