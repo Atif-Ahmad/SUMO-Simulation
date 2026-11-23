@@ -1,6 +1,8 @@
 import argparse
 import sys
 from pathlib import Path
+from controller_algorithm import decide
+
 
 # Make "import run_scenario" work no matter which folder you run this from.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -398,6 +400,7 @@ def main():
     args = parser.parse_args()
 
     decide_function = placeholder
+    # decide_function = decide
 
     controller = NetworkController(decide_function)
     info = run(

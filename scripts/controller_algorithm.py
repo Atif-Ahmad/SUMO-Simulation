@@ -1,0 +1,2 @@
+def decide(snapshot):
+	pass
